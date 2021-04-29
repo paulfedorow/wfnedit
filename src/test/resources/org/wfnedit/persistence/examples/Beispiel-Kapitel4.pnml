@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+	<net>
+		<place id="S3">
+			<name>
+				<value>P3</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="250" y="350"/>
+			</graphics>
+		</place>
+		<place id="S4">
+			<name>
+				<value>P4</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="450" y="150"/>
+			</graphics>
+		</place>
+		<place id="S5">
+			<name>
+				<value>P5</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="450" y="350"/>
+			</graphics>
+		</place>
+		<place id="S6">
+			<name>
+				<value>P6</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="650" y="150"/>
+			</graphics>
+		</place>
+		<place id="S7">
+			<name>
+				<value>P7</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="650" y="350"/>
+			</graphics>
+		</place>
+		<place id="S8">
+			<name>
+				<value>P8</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="850" y="250"/>
+			</graphics>
+		</place>
+		<place id="S1">
+			<name>
+				<value>P1</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="50" y="250"/>
+			</graphics>
+		</place>
+		<place id="S2">
+			<name>
+				<value>P2</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="250" y="150"/>
+			</graphics>
+		</place>
+		<transition id="T4">
+			<name>
+				<value>Wohnzimmer saugen</value>
+			</name>
+			<graphics>
+				<position x="550" y="200"/>
+			</graphics>
+		</transition>
+		<transition id="T5">
+			<name>
+				<value>Spülmaschine einräumen</value>
+			</name>
+			<graphics>
+				<position x="350" y="350"/>
+			</graphics>
+		</transition>
+		<transition id="T6">
+			<name>
+				<value>Spülmaschine starten</value>
+			</name>
+			<graphics>
+				<position x="550" y="350"/>
+			</graphics>
+		</transition>
+		<transition id="T7">
+			<name>
+				<value>Tür öffnen</value>
+			</name>
+			<graphics>
+				<position x="750" y="250"/>
+			</graphics>
+		</transition>
+		<transition id="T1">
+			<name>
+				<value>Eltern klingeln</value>
+			</name>
+			<graphics>
+				<position x="150" y="250"/>
+			</graphics>
+		</transition>
+		<transition id="T2">
+			<name>
+				<value>Wohnzimmer fegen</value>
+			</name>
+			<graphics>
+				<position x="550" y="100"/>
+			</graphics>
+		</transition>
+		<transition id="T3">
+			<name>
+				<value>Wohnzimmer aufräumen</value>
+			</name>
+			<graphics>
+				<position x="350" y="150"/>
+			</graphics>
+		</transition>
+		<arc id="K1" source="S1" target="T1"/>
+		<arc id="K2" source="T1" target="S2"/>
+		<arc id="K3" source="S4" target="T2"/>
+		<arc id="K4" source="T2" target="S6"/>
+		<arc id="K5" source="S6" target="T7"/>
+		<arc id="K11" source="T1" target="S3"/>
+		<arc id="K6" source="T7" target="S8"/>
+		<arc id="K10" source="T4" target="S6"/>
+		<arc id="K7" source="S2" target="T3"/>
+		<arc id="K13" source="T5" target="S5"/>
+		<arc id="K8" source="T3" target="S4"/>
+		<arc id="K12" source="S3" target="T5"/>
+		<arc id="K9" source="S4" target="T4"/>
+		<arc id="K15" source="T6" target="S7"/>
+		<arc id="K14" source="S5" target="T6"/>
+		<arc id="K16" source="S7" target="T7"/>
+	</net>
+</pnml>

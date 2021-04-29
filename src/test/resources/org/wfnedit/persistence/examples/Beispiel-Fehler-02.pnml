@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net>
+    <transition id="Transition1">
+      <name>
+        <value>Transition 1</value>
+      </name>
+      <graphics>
+        <position x="100" y="100"/>
+      </graphics>
+    </transition>
+    <place id="Stelle1">
+      <name>
+        <value>Stelle 1</value>
+      </name>
+      <initialMarking>
+        <token>
+          <value>0</value>
+        </token>
+      </initialMarking>
+      <graphics>
+        <position x="300" y="100"/>
+      </graphics>
+    </place>
+    <arc id="arc1" source="Transition1" target="Stelle1"/>
+  </net>
+</pnml>

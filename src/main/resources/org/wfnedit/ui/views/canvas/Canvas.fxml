@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.Pane?>
+
+<ScrollPane xmlns:fx="http://javafx.com/fxml"
+            fx:id="canvasScrollPane"
+            fx:controller="org.wfnedit.ui.views.canvas.Canvas"
+            hbarPolicy="ALWAYS"
+            vbarPolicy="ALWAYS"
+            styleClass="canvas, edge-to-edge">
+    <Pane fx:id="canvas"
+          styleClass="canvas-pane"
+          onMousePressed="#onMousePressed"
+          onMouseDragged="#onMouseDragged"
+          onMouseReleased="#onMouseReleased">
+        <fx:include source="CanvasAdHocEdge.fxml" />
+        <Group fx:id="edges" />
+        <Group fx:id="nodes" />
+        <fx:include source="Rubberband.fxml" />
+    </Pane>
+</ScrollPane>

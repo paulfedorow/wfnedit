@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<ToolBar xmlns:fx="http://javafx.com/fxml"
+         styleClass="tool-bar"
+         fx:controller="org.wfnedit.ui.views.ToolBar">
+    <HBox>
+        <ToggleButton fx:id="cursorButton" styleClass="left-pill, tool-bar-cursor" />
+        <ToggleButton fx:id="placeButton" styleClass="center-pill, tool-bar-place" />
+        <ToggleButton fx:id="transitionButton" styleClass="center-pill, tool-bar-transition" />
+        <ToggleButton fx:id="edgeButton" styleClass="center-pill, tool-bar-edge" />
+        <ToggleButton fx:id="fireButton" styleClass="right-pill, tool-bar-fire" />
+    </HBox>
+    <Region HBox.hgrow="ALWAYS" />
+    <MenuButton text="Settings">
+        <items>
+            <CustomMenuItem hideOnClick="false">
+                <content>
+                    <HBox styleClass="settings-shape-size-hbox">
+                        <Label text="Canvas Size"/>
+                        <Spinner fx:id="shapeSizeSpinner" min="0.5" max="1.5" amountToStepBy="0.25"
+                                 styleClass="split-arrows-horizontal" maxWidth="100" />
+                    </HBox>
+                </content>
+            </CustomMenuItem>
+        </items>
+    </MenuButton>
+</ToolBar>
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+	<net>
+		<place id="S3">
+			<name>
+				<value>S3</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="300" y="250"/>
+			</graphics>
+		</place>
+		<place id="S5">
+			<name>
+				<value>S5</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="500" y="200"/>
+			</graphics>
+		</place>
+		<place id="S4">
+			<name>
+				<value>S4</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="300" y="350"/>
+			</graphics>
+		</place>
+		<place id="S6">
+			<name>
+				<value>S6</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="600" y="350"/>
+			</graphics>
+		</place>
+		<place id="S7">
+			<name>
+				<value>S7</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="800" y="250"/>
+			</graphics>
+		</place>
+		<place id="S1">
+			<name>
+				<value>S1</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="100" y="250"/>
+			</graphics>
+		</place>
+		<place id="S2">
+			<name>
+				<value>S2</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="300" y="150"/>
+			</graphics>
+		</place>
+		<transition id="T4">
+			<name>
+				<value>T4</value>
+			</name>
+			<graphics>
+				<position x="500" y="350"/>
+			</graphics>
+		</transition>
+		<transition id="T5">
+			<name>
+				<value>T5</value>
+			</name>
+			<graphics>
+				<position x="700" y="250"/>
+			</graphics>
+		</transition>
+		<transition id="T1">
+			<name>
+				<value>T1</value>
+			</name>
+			<graphics>
+				<position x="200" y="250"/>
+			</graphics>
+		</transition>
+		<transition id="T2">
+			<name>
+				<value>T2</value>
+			</name>
+			<graphics>
+				<position x="400" y="150"/>
+			</graphics>
+		</transition>
+		<transition id="T3">
+			<name>
+				<value>T3</value>
+			</name>
+			<graphics>
+				<position x="400" y="250"/>
+			</graphics>
+		</transition>
+		<arc id="K1" source="S1" target="T1"/>
+		<arc id="K2" source="T1" target="S2"/>
+		<arc id="K3" source="T1" target="S3"/>
+		<arc id="K4" source="S2" target="T2"/>
+		<arc id="K5" source="S3" target="T3"/>
+		<arc id="K11" source="T4" target="S6"/>
+		<arc id="K6" source="T2" target="S5"/>
+		<arc id="K10" source="S5" target="T4"/>
+		<arc id="K7" source="T3" target="S5"/>
+		<arc id="K13" source="S6" target="T5"/>
+		<arc id="K8" source="T1" target="S4"/>
+		<arc id="K12" source="S5" target="T5"/>
+		<arc id="K9" source="S4" target="T4"/>
+		<arc id="K14" source="T5" target="S7"/>
+	</net>
+</pnml>

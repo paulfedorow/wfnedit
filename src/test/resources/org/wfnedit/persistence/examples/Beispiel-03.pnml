@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+	<net>
+		<place id="S3">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="235" y="533"/>
+			</graphics>
+		</place>
+		<place id="S4">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="422" y="227"/>
+			</graphics>
+		</place>
+		<place id="S5">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="654" y="160"/>
+			</graphics>
+		</place>
+		<place id="S6">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="853" y="252"/>
+			</graphics>
+		</place>
+		<place id="S7">
+			<name>
+				<value>Ende</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="1002" y="356"/>
+			</graphics>
+		</place>
+		<place id="S8">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="429" y="533"/>
+			</graphics>
+		</place>
+		<place id="S9">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="611" y="533"/>
+			</graphics>
+		</place>
+		<place id="S11">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="678" y="603"/>
+			</graphics>
+		</place>
+		<place id="S10">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="853" y="481"/>
+			</graphics>
+		</place>
+		<place id="S12">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="747" y="669"/>
+			</graphics>
+		</place>
+		<place id="S1">
+			<name>
+				<value>Start</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="73" y="422"/>
+			</graphics>
+		</place>
+		<place id="S2">
+			<name>
+				<value> </value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="236" y="322"/>
+			</graphics>
+		</place>
+		<transition id="T4">
+			<name>
+				<value>Zeitüberschreitung</value>
+			</name>
+			<graphics>
+				<position x="540" y="308"/>
+			</graphics>
+		</transition>
+		<transition id="T5">
+			<name>
+				<value>Fragebogen auswerten</value>
+			</name>
+			<graphics>
+				<position x="771" y="160"/>
+			</graphics>
+		</transition>
+		<transition id="T6">
+			<name>
+				<value>archivieren</value>
+			</name>
+			<graphics>
+				<position x="897" y="356"/>
+			</graphics>
+		</transition>
+		<transition id="T7">
+			<name>
+				<value>Beschwerde aufnehmen</value>
+			</name>
+			<graphics>
+				<position x="327" y="533"/>
+			</graphics>
+		</transition>
+		<transition id="T8">
+			<name>
+				<value>Beschwerde auswerten</value>
+			</name>
+			<graphics>
+				<position x="517" y="533"/>
+			</graphics>
+		</transition>
+		<transition id="T9">
+			<name>
+				<value>fertig</value>
+			</name>
+			<graphics>
+				<position x="731" y="481"/>
+			</graphics>
+		</transition>
+		<transition id="T10">
+			<name>
+				<value>fortfahren</value>
+			</name>
+			<graphics>
+				<position x="611" y="603"/>
+			</graphics>
+		</transition>
+		<transition id="T12">
+			<name>
+				<value>OK</value>
+			</name>
+			<graphics>
+				<position x="853" y="617"/>
+			</graphics>
+		</transition>
+		<transition id="T11">
+			<name>
+				<value>Beschwerde bearbeiten</value>
+			</name>
+			<graphics>
+				<position x="747" y="603"/>
+			</graphics>
+		</transition>
+		<transition id="T13">
+			<name>
+				<value>nicht OK</value>
+			</name>
+			<graphics>
+				<position x="411" y="669"/>
+			</graphics>
+		</transition>
+		<transition id="T1">
+			<name>
+				<value>registrieren</value>
+			</name>
+			<graphics>
+				<position x="183" y="422"/>
+			</graphics>
+		</transition>
+		<transition id="T2">
+			<name>
+				<value>Fragebogen senden</value>
+			</name>
+			<graphics>
+				<position x="304" y="262"/>
+			</graphics>
+		</transition>
+		<transition id="T3">
+			<name>
+				<value>Fragebogen erhalten</value>
+			</name>
+			<graphics>
+				<position x="540" y="160"/>
+			</graphics>
+		</transition>
+		<arc id="K1" source="S1" target="T1"/>
+		<arc id="K2" source="T1" target="S2"/>
+		<arc id="K3" source="T1" target="S3"/>
+		<arc id="K20" source="S10" target="T6"/>
+		<arc id="K4" source="S2" target="T2"/>
+		<arc id="K5" source="T2" target="S4"/>
+		<arc id="K22" source="T10" target="S11"/>
+		<arc id="K6" source="S4" target="T3"/>
+		<arc id="K21" source="S9" target="T10"/>
+		<arc id="K7" source="S4" target="T4"/>
+		<arc id="K24" source="T11" target="S12"/>
+		<arc id="K8" source="T3" target="S5"/>
+		<arc id="K23" source="S11" target="T11"/>
+		<arc id="K9" source="S5" target="T5"/>
+		<arc id="K26" source="T12" target="S10"/>
+		<arc id="K25" source="S12" target="T12"/>
+		<arc id="K28" source="T13" target="S3"/>
+		<arc id="K27" source="S12" target="T13"/>
+		<arc id="K11" source="T4" target="S6"/>
+		<arc id="K10" source="T5" target="S6"/>
+		<arc id="K13" source="T6" target="S7"/>
+		<arc id="K12" source="S6" target="T6"/>
+		<arc id="K15" source="T7" target="S8"/>
+		<arc id="K14" source="S3" target="T7"/>
+		<arc id="K17" source="T8" target="S9"/>
+		<arc id="K16" source="S8" target="T8"/>
+		<arc id="K19" source="T9" target="S10"/>
+		<arc id="K18" source="S9" target="T9"/>
+	</net>
+</pnml>

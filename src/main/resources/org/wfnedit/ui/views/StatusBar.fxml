@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" fx:id="statusBar"
+      styleClass="status-bar"
+      fx:controller="org.wfnedit.ui.views.StatusBar">
+    <Label fx:id="statusText" styleClass="status-bar-text" />
+</HBox>

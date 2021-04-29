@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import java.lang.*?>
+<fx:root type="Group" xmlns:fx="http://javafx.com/fxml" styleClass="canvas-node"
+         fx:controller="org.wfnedit.ui.views.canvas.CanvasNode">
+    <Rectangle fx:id="transitionShape" styleClass="canvas-node-shape"
+               onMousePressed="#onMousePressedOnShape"
+               onDragDetected="#onDragDetected"
+               onMouseDragged="#onMouseDraggedOnShape"
+               onMouseReleased="#onMouseReleasedOnShape"
+               onMouseDragEntered="#onMouseDragEnteredNode"
+               onMouseDragExited="#onMouseDragExitedNode" />
+    <Polygon fx:id="transitionPlayShape" styleClass="canvas-node-transition-play"
+             mouseTransparent="true">
+        <points>
+            <Double fx:value="0" /><Double fx:value="0" />
+            <Double fx:value="0" /><Double fx:value="1" />
+            <Double fx:value="0.866" /><Double fx:value="0.5" />
+        </points>
+    </Polygon>
+    <Circle fx:id="placeShape" styleClass="canvas-node-shape"
+            onMousePressed="#onMousePressedOnShape"
+            onDragDetected="#onDragDetected"
+            onMouseDragged="#onMouseDraggedOnShape"
+            onMouseReleased="#onMouseReleasedOnShape"
+            onMouseDragEntered="#onMouseDragEnteredNode"
+            onMouseDragExited="#onMouseDragExitedNode" />
+    <Circle fx:id="placeMarkShape" styleClass="canvas-node-place-mark"
+            mouseTransparent="true" />
+    <TextField fx:id="nameField" styleClass="name-field"
+               onMousePressed="#onMousePressedOnNameField" />
+</fx:root>
+

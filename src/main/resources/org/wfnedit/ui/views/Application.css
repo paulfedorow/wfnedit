@@ -1,0 +1,220 @@
+/* Canvas */
+
+.canvas.ADD_TRANSITION .canvas-pane,
+.canvas.ADD_PLACE .canvas-pane,
+.canvas.ADD_EDGE .canvas-pane {
+    -fx-cursor: crosshair;
+}
+
+.canvas .canvas-pane {
+    -fx-background-color: #fdfdfd;
+}
+
+.canvas .rubberband {
+    -fx-fill: none;
+    -fx-stroke: #2c9dc8;
+    -fx-stroke-width: 2px;
+    -fx-stroke-type: inside;
+    -fx-stroke-dash-array: 3px 7px;
+}
+
+/* CanvasNode */
+
+.canvas-node .canvas-node-shape {
+    -fx-fill: #e5e4e4;
+    -fx-stroke-type: inside;
+    -fx-stroke-width: 2px;
+    -fx-cursor: move;
+}
+
+.canvas-node .canvas-node-transition-play {
+    -fx-fill: none;
+}
+
+.canvas-node.ACTIVE_TRANSITION.CONTACT_TRANSITION .canvas-node-shape {
+    -fx-fill: #e5e4e4;
+}
+
+.canvas-node.ACTIVE_TRANSITION.CONTACT_TRANSITION .canvas-node-transition-play {
+    -fx-fill: #9f9e9e;
+}
+
+.canvas-node.ACTIVE_TRANSITION .canvas-node-shape {
+    -fx-fill: #2c9dc8;
+}
+
+.canvas-node.ACTIVE_TRANSITION.SELECTED .canvas-node-shape {
+    -fx-stroke: #285a82;
+}
+
+.canvas-node.ACTIVE_TRANSITION .canvas-node-transition-play {
+    -fx-fill: #285a82;
+}
+
+.canvas-node .canvas-node-place-mark {
+    -fx-fill: none;
+}
+
+.canvas-node.MARKED_PLACE.canvas-node .canvas-node-place-mark {
+    -fx-fill: #9f9e9e;
+}
+
+.canvas-node.MARKED_PLACE.START_PLACE .canvas-node-place-mark {
+    -fx-fill: #4d974d;
+}
+
+.canvas-node.MARKED_PLACE.END_PLACE .canvas-node-place-mark {
+    -fx-fill: #ba6060;
+}
+
+.canvas-node.SELECTED .canvas-node-shape {
+    -fx-stroke: #414141;
+}
+
+.canvas-node.START_PLACE .canvas-node-shape {
+    -fx-fill: #77dd77;
+}
+
+.canvas-node.START_PLACE.SELECTED .canvas-node-shape {
+    -fx-stroke: #3d7f3d;
+}
+
+.canvas-node.END_PLACE .canvas-node-shape {
+    -fx-fill: #ff6961;
+}
+
+.canvas-node.END_PLACE.SELECTED .canvas-node-shape {
+    -fx-stroke: #7f3a32;
+}
+
+.canvas.ADD_EDGE .canvas-node .canvas-node-shape:hover,
+.canvas.ADD_EDGE .canvas-node.DOES_ACCEPT_EDGE .canvas-node-shape {
+    -fx-cursor: crosshair;
+    -fx-stroke: #414141;
+}
+
+.canvas.ADD_EDGE .canvas-node.ACTIVE_TRANSITION .canvas-node-shape:hover,
+.canvas.ADD_EDGE .canvas-node.ACTIVE_TRANSITION.DOES_ACCEPT_EDGE .canvas-node-shape {
+    -fx-stroke: #285a82;
+}
+
+.canvas.ADD_EDGE .canvas-node.START_PLACE .canvas-node-shape:hover,
+.canvas.ADD_EDGE .canvas-node.START_PLACE.DOES_ACCEPT_EDGE .canvas-node-shape {
+    -fx-stroke: #3d7f3d;
+}
+
+.canvas.ADD_EDGE .canvas-node.END_PLACE .canvas-node-shape:hover,
+.canvas.ADD_EDGE .canvas-node.END_PLACE.DOES_ACCEPT_EDGE .canvas-node-shape {
+    -fx-stroke: #7f3a32;
+}
+
+.canvas.ADD_EDGE .canvas-node.DOES_NOT_ACCEPT_EDGE .canvas-node-shape {
+    -fx-opacity: 0.5;
+}
+
+.canvas.FIRE .canvas-node.ACTIVE_TRANSITION .canvas-node-shape:hover {
+    -fx-stroke: #285a82;
+}
+
+.canvas.FIRE .canvas-node.ACTIVE_TRANSITION.CONTACT_TRANSITION .canvas-node-shape:hover {
+    -fx-stroke: #e5e4e4;
+}
+
+.canvas-node .name-field {
+    -fx-alignment: center;
+    -fx-background-color: none;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 2;
+    -fx-padding: 0.25em 0.416667em  0.333333em 0.416667em; /* 3 5 4 5 */
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+    -fx-cursor: text;
+}
+
+.canvas-node.SELECTED .name-field {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-text-box-border, -fx-control-inner-background;
+}
+
+.canvas.node .name-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: -0.4, 1, 2;
+    -fx-background-radius: 3.4, 2, 2;
+    -fx-prompt-text-fill: transparent;
+}
+
+/* CanvasEdge */
+
+.canvas-edge .canvas-edge-shaft {
+    -fx-stroke: grey;
+}
+
+.canvas-edge .canvas-edge-invisible-shaft {
+    -fx-stroke: deeppink;
+    -fx-opacity: 0%;
+    -fx-stroke-width: 20px;
+}
+
+.canvas-edge.SELECTED .canvas-edge-shaft {
+    -fx-stroke: #414141;
+}
+
+.canvas-edge .canvas-edge-tip {
+    -fx-fill: grey;
+}
+
+.canvas-edge.SELECTED .canvas-edge-tip {
+    -fx-fill: #414141;
+}
+
+/* MenuBar */
+
+.settings-shape-size-hbox {
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+}
+
+/* StatusBar */
+
+.status-bar {
+    -fx-padding: 4px;
+}
+
+.status-bar .status-bar-text {
+    -fx-background-radius: 2;
+}
+
+.status-bar.valid .status-bar-text {
+    -fx-background-color: rgba(61, 127, 61, 0.25);
+}
+
+.status-bar.invalid .status-bar-text {
+    -fx-background-color: rgba(127, 58, 50, 0.25);
+}
+
+/* ToolBar */
+
+.tool-bar .toggle-button {
+    -fx-background-size: 30px 27px;
+    -fx-background-repeat: no-repeat;
+    -fx-min-width: 30px;
+}
+
+.tool-bar .tool-bar-cursor {
+    -fx-background-image: url(icons/cursor.png);
+}
+
+.tool-bar .tool-bar-place {
+    -fx-background-image: url(icons/place.png);
+}
+
+.tool-bar .tool-bar-transition {
+    -fx-background-image: url(icons/transition.png);
+}
+
+.tool-bar .tool-bar-edge {
+    -fx-background-image: url(icons/edge.png);
+}
+
+.tool-bar .tool-bar-fire {
+    -fx-background-image: url(icons/fire.png);
+}

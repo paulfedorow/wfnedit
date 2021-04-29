@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net>
+    <place id="place1">
+      <name>
+        <value>P1</value>
+      </name>
+      <initialMarking>
+        <token>
+          <value>0</value>
+        </token>
+      </initialMarking>
+      <graphics>
+        <position x="200" y="150"/>
+      </graphics>
+    </place>
+    <place id="place2">
+      <name>
+        <value>P2</value>
+      </name>
+      <initialMarking>
+        <token>
+          <value>0</value>
+        </token>
+      </initialMarking>
+      <graphics>
+        <position x="400" y="150"/>
+      </graphics>
+    </place>
+    <transition id="transition1">
+      <name>
+        <value>a</value>
+      </name>
+      <graphics>
+        <position x="300" y="150"/>
+      </graphics>
+    </transition>
+    <arc id="arc1" source="place1" target="transition1"/>
+    <arc id="arc2" source="transition1" target="place2"/>
+  </net>
+</pnml>

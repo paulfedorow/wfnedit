@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+	<net>
+		<place id="S2">
+			<name>
+				<value>S2</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="250" y="75"/>
+			</graphics>
+		</place>
+		<place id="S3">
+			<name>
+				<value>S3</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="250" y="175"/>
+			</graphics>
+		</place>
+		<place id="S1">
+			<name>
+				<value>P1</value>
+			</name>
+			<initialMarking>
+				<token>
+					<value>0</value>
+				</token>
+			</initialMarking>
+			<graphics>
+				<position x="50" y="125"/>
+			</graphics>
+		</place>
+		<transition id="T1">
+			<name>
+				<value>T1</value>
+			</name>
+			<graphics>
+				<position x="150" y="125"/>
+			</graphics>
+		</transition>
+		<arc id="K1" source="S1" target="T1"/>
+		<arc id="K3" source="T1" target="S2"/>
+		<arc id="K4" source="T1" target="S3"/>
+	</net>
+</pnml>

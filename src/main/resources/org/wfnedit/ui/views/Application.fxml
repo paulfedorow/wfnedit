@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+
+<VBox xmlns:fx="http://javafx.com/fxml">
+    <fx:include source="MenuBar.fxml" />
+    <fx:include source="ToolBar.fxml" />
+    <fx:include source="canvas/Canvas.fxml" VBox.vgrow="ALWAYS" />
+    <fx:include source="StatusBar.fxml" />
+    <stylesheets>
+        <URL value="@Application.css" />
+    </stylesheets>
+</VBox>
