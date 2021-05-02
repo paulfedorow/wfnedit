@@ -4,6 +4,10 @@ wfnedit is a simple cross-platform GUI editor for [workflow nets](https://en.wik
 
 ![Preview](./preview.gif)
 
+## Compatibility
+
+Should work everywhere as long as Java 8 is available. Tested under Archlinux and Windows 10.
+
 ## Usage
 
 Java 8 or above is required.
