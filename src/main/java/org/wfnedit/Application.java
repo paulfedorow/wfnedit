@@ -1,6 +1,5 @@
 package org.wfnedit;
 
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -17,11 +16,9 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Starts the workflow net editor application.
- * <p>
- * Handles the initialization of the javafx application and of the setup of the services.
+ * Handles the initialization of the javafx application and the setup of services.
  */
-public class Runner extends Application {
+public class Application extends javafx.application.Application {
     /**
      * Default application widths.
      */
@@ -34,15 +31,6 @@ public class Runner extends Application {
      * Default application title.
      */
     private static final String APPLICATION_TITLE = "wfnedit";
-
-    /**
-     * Launches the javafx application.
-     *
-     * @param args ignored
-     */
-    public static void main(String[] args) {
-        Application.launch(Runner.class, args);
-    }
 
     /**
      * Initializes the javafx application.
