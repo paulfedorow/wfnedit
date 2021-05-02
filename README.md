@@ -8,6 +8,10 @@ wfnedit is a simple cross-platform GUI editor for [workflow nets](https://en.wik
 
 Java 8 or above is required.
 
+### Prebuild JAR
+
+A [prebuilt JAR](https://github.com/paulfedorow/wfnedit/releases) is available.
+
 ### Build from source
 
 Execute the following commands to build wfnedit:
