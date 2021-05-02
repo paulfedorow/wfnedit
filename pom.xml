@@ -6,7 +6,7 @@
 
   <groupId>org.wfnedit</groupId>
   <artifactId>wfnedit</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.1</version>
 
   <name>wfnedit</name>
   <url>https://github.com/paulfedorow/wfnedit/</url>
