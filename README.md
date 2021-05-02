@@ -28,6 +28,6 @@ The resulting JAR is located in the directory ``target``.
 
 ### Run
 
-Run the JAR file by double or with the following command:
+Run the JAR file by double-click or with the following command:
 
     java -jar wfnedit-0.1-jar-with-dependencies.jar
