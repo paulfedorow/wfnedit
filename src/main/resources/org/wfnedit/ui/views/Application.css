@@ -1,8 +1,7 @@
 /* Canvas */
 
 .canvas.ADD_TRANSITION .canvas-pane,
-.canvas.ADD_PLACE .canvas-pane,
-.canvas.ADD_EDGE .canvas-pane {
+.canvas.ADD_PLACE .canvas-pane {
     -fx-cursor: crosshair;
 }
 
@@ -24,7 +23,6 @@
     -fx-fill: #e5e4e4;
     -fx-stroke-type: inside;
     -fx-stroke-width: 2px;
-    -fx-cursor: move;
 }
 
 .canvas-node .canvas-node-transition-play {
@@ -55,7 +53,7 @@
     -fx-fill: none;
 }
 
-.canvas-node.MARKED_PLACE.canvas-node .canvas-node-place-mark {
+.canvas-node.MARKED_PLACE .canvas-node-place-mark {
     -fx-fill: #9f9e9e;
 }
 
@@ -87,6 +85,12 @@
     -fx-stroke: #7f3a32;
 }
 
+.canvas.CURSOR .canvas-node .canvas-node-shape:hover,
+.canvas.ADD_PLACE .canvas-node .canvas-node-shape:hover,
+.canvas.ADD_TRANSITION .canvas-node .canvas-node-shape:hover {
+    -fx-cursor: move;
+}
+
 .canvas.ADD_EDGE .canvas-node .canvas-node-shape:hover,
 .canvas.ADD_EDGE .canvas-node.DOES_ACCEPT_EDGE .canvas-node-shape {
     -fx-cursor: crosshair;
@@ -110,6 +114,10 @@
 
 .canvas.ADD_EDGE .canvas-node.DOES_NOT_ACCEPT_EDGE .canvas-node-shape {
     -fx-opacity: 0.5;
+}
+
+.canvas.FIRE .canvas-node.ACTIVE_TRANSITION .canvas-node-shape:hover {
+    -fx-cursor: hand;
 }
 
 .canvas.FIRE .canvas-node.ACTIVE_TRANSITION .canvas-node-shape:hover {
