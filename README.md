@@ -15,7 +15,7 @@ Should work everywhere as long as Java 8 is available. Tested under Archlinux an
 
 Java 8 or above is required.
 
-### Prebuild JAR
+### Prebuilt JAR
 
 A [prebuilt JAR](https://github.com/paulfedorow/wfnedit/releases) is available.
 
